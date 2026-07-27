@@ -1,0 +1,2571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aavrit | Pure. Wholesome. Carefully Selected.</title>
+
+<meta name="description" content="Discover carefully selected pulses from Aavrit. Shop quality Moong, Urad, Rajma, Chana, Arhar and Masoor products in 500g, 1kg and 2kg packs.">
+
+<style>
+
+/* =====================================================
+   AAVRIT - PREMIUM PULSES WEBSITE
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f2e8;
+    color: #3d4930;
+    line-height: 1.6;
+}
+
+/* -------------------------
+   GLOBAL
+------------------------- */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #35452d;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 42px;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #68705e;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary {
+    background: #526641;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #35452d;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #526641;
+    border: 1px solid #526641;
+}
+
+.btn-secondary:hover {
+    background: #526641;
+    color: white;
+}
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(247, 242, 232, 0.97);
+    border-bottom: 1px solid #ddd5c5;
+}
+
+.navbar {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 31px;
+    font-weight: bold;
+    color: #526641;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #8a7351;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3d4930;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #8a7351;
+}
+
+.cart-button {
+    background: #526641;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 11px 18px;
+    font-weight: bold;
+}
+
+.cart-button:hover {
+    background: #35452d;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+/* -------------------------
+   HERO
+------------------------- */
+
+.hero {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(247,242,232,0.98) 0%,
+            rgba(247,242,232,0.92) 42%,
+            rgba(247,242,232,0.35) 100%
+        ),
+        url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label {
+    color: #8a7351;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.08;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #8a7351;
+}
+
+.hero-tagline {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-style: italic;
+    color: #526641;
+    margin-bottom: 18px;
+}
+
+.hero-text {
+    color: #626956;
+    max-width: 570px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.trust-bar {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    color: #526641;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* -------------------------
+   INTRO
+------------------------- */
+
+.intro {
+    background: #fffdf8;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.intro-image {
+    height: 480px;
+    border-radius: 5px;
+    background:
+        linear-gradient(rgba(45,55,35,0.15), rgba(45,55,35,0.15)),
+        url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.intro-content h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.intro-content p {
+    color: #68705e;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.intro-highlight {
+    margin-top: 30px;
+    padding: 20px;
+    border-left: 4px solid #8a7351;
+    background: #f3ede0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+}
+
+/* -------------------------
+   WHY CHOOSE US
+------------------------- */
+
+.why {
+    background: #e9e3d4;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: #fffdf8;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+}
+
+.feature-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #737866;
+    font-size: 14px;
+}
+
+/* -------------------------
+   FARM TO FAMILY
+------------------------- */
+
+.farm {
+    background: #526641;
+    color: white;
+}
+
+.farm .section-title {
+    color: white;
+}
+
+.farm .section-subtitle {
+    color: #e1e5d9;
+}
+
+.process {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.process-card {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.process-number {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #dfe5d4;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.process-card h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.process-card p {
+    color: #e1e5d9;
+    font-size: 13px;
+}
+
+/* -------------------------
+   PRODUCTS
+------------------------- */
+
+.products {
+    background: #fffdf8;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #f7f2e8;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e1dacb;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(65, 70, 50, 0.12);
+}
+
+.product-image {
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8dfce;
+    font-size: 70px;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    font-size: 13px;
+    color: #747b69;
+    min-height: 42px;
+}
+
+.size-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.size-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc4b3;
+    border-radius: 5px;
+    background: white;
+    color: #3d4930;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #526641;
+    font-size: 18px;
+}
+
+.add-cart {
+    background: #526641;
+    color: white;
+    border: none;
+    padding: 9px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.add-cart:hover {
+    background: #35452d;
+}
+
+/* -------------------------
+   OUR STORY
+------------------------- */
+
+.story {
+    background: #f0eadf;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.story-content h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.story-content p {
+    color: #69705e;
+    margin-bottom: 18px;
+}
+
+.story-visual {
+    min-height: 500px;
+    background:
+        linear-gradient(rgba(52,69,45,0.12), rgba(52,69,45,0.12)),
+        url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1000&q=85");
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+}
+
+/* -------------------------
+   QUALITY PROMISE
+------------------------- */
+
+.quality {
+    background: #fffdf8;
+    text-align: center;
+}
+
+.quality-box {
+    max-width: 850px;
+    margin: auto;
+}
+
+.quality-box h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.quality-box p {
+    color: #6d7464;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.quality-points {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.quality-points span {
+    background: #f0eadf;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* -------------------------
+   CTA
+------------------------- */
+
+.cta {
+    padding: 100px 20px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(52,69,45,0.78), rgba(52,69,45,0.78)),
+        url("https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.cta h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #eef1e9;
+}
+
+.cta .btn-primary {
+    background: #f3ead9;
+    color: #3d4930;
+}
+
+/* -------------------------
+   CONTACT
+------------------------- */
+
+.contact {
+    background: #f7f2e8;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.contact-info h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #6d7464;
+    margin-bottom: 30px;
+}
+
+.contact-details div {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    background: #fffdf8;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d4ccbc;
+    border-radius: 5px;
+    font-family: inherit;
+    background: #faf8f2;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+footer {
+    background: #35452d;
+    color: #e8eadf;
+    padding: 60px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.footer-about p {
+    margin-top: 15px;
+    color: #cbd2c2;
+    max-width: 350px;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 9px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cbd2c2;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #59694f;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #cbd2c2;
+}
+
+/* -------------------------
+   CART SIDEBAR
+------------------------- */
+
+.cart-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1999;
+}
+
+.cart-overlay.active {
+    display: block;
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -450px;
+    width: 420px;
+    max-width: 100%;
+    height: 100vh;
+    background: #fffdf8;
+    z-index: 2000;
+    transition: 0.3s;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-sidebar.active {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd5c5;
+    padding-bottom: 20px;
+}
+
+.cart-header h2 {
+    font-size: 28px;
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 28px;
+}
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 0;
+}
+
+.cart-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd5c5;
+}
+
+.cart-item-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item h4 {
+    color: #35452d;
+}
+
+.cart-item small {
+    color: #777;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cart-controls button {
+    border: none;
+    background: #e9e3d4;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+
+.remove-item {
+    background: none !important;
+    color: #9a5c4b;
+    width: auto !important;
+    font-size: 12px;
+}
+
+.cart-total {
+    border-top: 1px solid #ddd5c5;
+    padding-top: 20px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background: #526641;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* -------------------------
+   TOAST
+------------------------- */
+
+.toast {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: #35452d;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 3000;
+}
+
+.toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+/* -------------------------
+   RESPONSIVE
+------------------------- */
+
+@media (max-width: 1000px) {
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        background: #f7f2e8;
+        flex-direction: column;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar .cart-button {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    .hero {
+        min-height: 650px;
+        background:
+            linear-gradient(
+                rgba(247,242,232,0.88),
+                rgba(247,242,232,0.88)
+            ),
+            url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .intro-grid,
+    .story-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-image {
+        height: 350px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+
+    .cta h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .product-grid,
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .trust-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<nav class="navbar container">
+
+<a href="#" style="text-decoration:none;">
+    <div class="logo">
+        AAVRIT
+        <span>PURE • WHOLESOME • CAREFULLY SELECTED</span>
+    </div>
+</a>
+
+<ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#products">Our Products</a></li>
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#quality">Quality Promise</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+<button class="cart-button" onclick="openCart()">
+    🛒 Cart (<span id="cartCount">0</span>)
+</button>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</nav>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-label">
+    From Farm to Family
+</div>
+
+<h1>
+    From the Soil We Trust,
+    <span>To the Food You Love.</span>
+</h1>
+
+<div class="hero-tagline">
+    Pure. Wholesome. Carefully Selected.
+</div>
+
+<p class="hero-text">
+    Quality pulses, thoughtfully sourced and carefully packed
+    for the meals that bring families together.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#products" class="btn btn-primary">
+    Explore Our Products
+</a>
+
+<a href="#story" class="btn btn-secondary">
+    Our Story
+</a>
+
+</div>
+
+<div class="trust-bar">
+
+<span>🌾 Carefully Sourced</span>
+<span>✓ Quality Assured</span>
+<span>🤝 Built on Trust</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+<section class="section intro">
+
+<div class="container intro-grid">
+
+<div class="intro-image"></div>
+
+<div class="intro-content">
+
+<h2>
+    Good Food Begins With Good Ingredients
+</h2>
+
+<p>
+    At Aavrit, we believe that the food we serve our families
+    should begin with ingredients we can trust.
+</p>
+
+<p>
+    Our journey is rooted in a simple promise—to bring carefully
+    selected pulses of consistent quality to your kitchen.
+</p>
+
+<p>
+    From sourcing to cleaning and packaging, we focus on maintaining
+    the quality, freshness and natural goodness of every grain.
+</p>
+
+<div class="intro-highlight">
+    Because when it comes to your family, quality is never a compromise.
+</div>
+
+<br>
+
+<a href="#story" class="btn btn-primary">
+    Discover Our Story →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section class="section why">
+
+<div class="container">
+
+<h2 class="section-title">
+    Quality You Can Trust. Goodness You Can Taste.
+</h2>
+
+<p class="section-subtitle">
+    We focus on quality at every step—from sourcing and selection
+    to careful packaging and delivery.
+</p>
+
+<div class="features">
+
+<div class="feature-card">
+    <div class="feature-icon">🌾</div>
+    <h3>Carefully Sourced</h3>
+    <p>
+        We select our pulses with care, focusing on quality
+        and consistency from the very beginning.
+    </p>
+</div>
+
+<div class="feature-card">
+    <div class="feature-icon">🔍</div>
+    <h3>Quality Focused</h3>
+    <p>
+        Every product is handled with attention to quality,
+        so you can feel confident about what you bring home.
+    </p>
+</div>
+
+<div class="feature-card">
+    <div class="feature-icon">📦</div>
+    <h3>Packed With Care</h3>
+    <p>
+        Our packaging is designed to keep your pulses protected
+        and ready for your kitchen.
+    </p>
+</div>
+
+<div class="feature-card">
+    <div class="feature-icon">❤️</div>
+    <h3>Made for Every Family</h3>
+    <p>
+        From everyday dal to special family meals, our products
+        are made to be a part of the food you love.
+    </p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FARM TO FAMILY
+===================================================== -->
+
+<section class="section farm">
+
+<div class="container">
+
+<h2 class="section-title">
+    From Farm to Family
+</h2>
+
+<p class="section-subtitle">
+    Every grain has a journey. We take care of every step
+    before it reaches your home.
+</p>
+
+<div class="process">
+
+<div class="process-card">
+    <div class="process-number">01</div>
+    <h3>Sourced With Care</h3>
+    <p>
+        We source quality pulses with care and attention
+        to the journey behind every grain.
+    </p>
+</div>
+
+<div class="process-card">
+    <div class="process-number">02</div>
+    <h3>Carefully Selected</h3>
+    <p>
+        Our pulses are selected with focus on quality
+        and consistency.
+    </p>
+</div>
+
+<div class="process-card">
+    <div class="process-number">03</div>
+    <h3>Prepared With Care</h3>
+    <p>
+        Our products are carefully handled and prepared
+        before they are packed.
+    </p>
+</div>
+
+<div class="process-card">
+    <div class="process-number">04</div>
+    <h3>Packed With Care</h3>
+    <p>
+        Our packaging helps protect the product on its
+        journey to your kitchen.
+    </p>
+</div>
+
+<div class="process-card">
+    <div class="process-number">05</div>
+    <h3>Delivered to You</h3>
+    <p>
+        Your order is prepared and delivered to your
+        doorstep with care.
+    </p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section class="section products" id="products">
+
+<div class="container">
+
+<h2 class="section-title">
+    Our Everyday Essentials
+</h2>
+
+<p class="section-subtitle">
+    Carefully selected pulses for the meals you love.
+    Choose from convenient 500 g, 1 kg and 2 kg packs.
+</p>
+
+<div class="product-grid">
+
+
+<!-- PRODUCT 1 -->
+
+<div class="product-card">
+
+<div class="product-image">🌱</div>
+
+<div class="product-info">
+
+<h3>Moong Whole</h3>
+
+<p>
+    Wholesome and versatile for everyday cooking.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+        onchange="updatePrice(this, 'moong-whole')">
+
+<option value="500" data-price="99">500 g</option>
+<option value="1000" data-price="185">1 kg</option>
+<option value="2000" data-price="350">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-moong-whole">£0.99</span>
+
+<button class="add-cart"
+onclick="addToCart('Moong Whole', 'moong-whole', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card">
+
+<div class="product-image">🌱</div>
+
+<div class="product-info">
+
+<h3>Moong Dal (Two Split)</h3>
+
+<p>
+    Light, wholesome and perfect for everyday meals.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'moong-dal')">
+
+<option value="500" data-price="110">500 g</option>
+<option value="1000" data-price="210">1 kg</option>
+<option value="2000" data-price="400">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-moong-dal">£1.10</span>
+
+<button class="add-cart"
+onclick="addToCart('Moong Dal (Two Split)', 'moong-dal', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card">
+
+<div class="product-image">🌱</div>
+
+<div class="product-info">
+
+<h3>Moong Dhoya</h3>
+
+<p>
+    Carefully selected for wholesome family meals.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'moong-dhoya')">
+
+<option value="500" data-price="115">500 g</option>
+<option value="1000" data-price="220">1 kg</option>
+<option value="2000" data-price="420">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-moong-dhoya">£1.15</span>
+
+<button class="add-cart"
+onclick="addToCart('Moong Dhoya', 'moong-dhoya', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 4 -->
+
+<div class="product-card">
+
+<div class="product-image">🫘</div>
+
+<div class="product-info">
+
+<h3>Urad Whole</h3>
+
+<p>
+    A traditional pulse for authentic Indian recipes.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'urad-whole')">
+
+<option value="500" data-price="105">500 g</option>
+<option value="1000" data-price="200">1 kg</option>
+<option value="2000" data-price="385">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-urad-whole">£1.05</span>
+
+<button class="add-cart"
+onclick="addToCart('Urad Whole', 'urad-whole', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 5 -->
+
+<div class="product-card">
+
+<div class="product-image">🫘</div>
+
+<div class="product-info">
+
+<h3>Urad Dal (Two Split)</h3>
+
+<p>
+    Carefully selected for traditional Indian cooking.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'urad-dal')">
+
+<option value="500" data-price="110">500 g</option>
+<option value="1000" data-price="210">1 kg</option>
+<option value="2000" data-price="400">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-urad-dal">£1.10</span>
+
+<button class="add-cart"
+onclick="addToCart('Urad Dal (Two Split)', 'urad-dal', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 6 -->
+
+<div class="product-card">
+
+<div class="product-image">🫘</div>
+
+<div class="product-info">
+
+<h3>Urad Dhoya</h3>
+
+<p>
+    A versatile ingredient for much-loved recipes.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'urad-dhoya')">
+
+<option value="500" data-price="115">500 g</option>
+<option value="1000" data-price="220">1 kg</option>
+<option value="2000" data-price="420">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-urad-dhoya">£1.15</span>
+
+<button class="add-cart"
+onclick="addToCart('Urad Dhoya', 'urad-dhoya', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 7 -->
+
+<div class="product-card">
+
+<div class="product-image">🫘</div>
+
+<div class="product-info">
+
+<h3>Rajma Chitra</h3>
+
+<p>
+    Classic kidney beans for hearty family meals.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'rajma-chitra')">
+
+<option value="500" data-price="130">500 g</option>
+<option value="1000" data-price="250">1 kg</option>
+<option value="2000" data-price="480">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-rajma-chitra">£1.30</span>
+
+<button class="add-cart"
+onclick="addToCart('Rajma Chitra', 'rajma-chitra', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 8 -->
+
+<div class="product-card">
+
+<div class="product-image">🫘</div>
+
+<div class="product-info">
+
+<h3>Rajma Jammu</h3>
+
+<p>
+    Rich and hearty beans for comforting meals.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'rajma-jammu')">
+
+<option value="500" data-price="140">500 g</option>
+<option value="1000" data-price="270">1 kg</option>
+<option value="2000" data-price="520">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-rajma-jammu">£1.40</span>
+
+<button class="add-cart"
+onclick="addToCart('Rajma Jammu', 'rajma-jammu', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 9 -->
+
+<div class="product-card">
+
+<div class="product-image">🌾</div>
+
+<div class="product-info">
+
+<h3>Arhar Dal</h3>
+
+<p>
+    A timeless favourite for comforting everyday dal.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'arhar-dal')">
+
+<option value="500" data-price="120">500 g</option>
+<option value="1000" data-price="230">1 kg</option>
+<option value="2000" data-price="440">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-arhar-dal">£1.20</span>
+
+<button class="add-cart"
+onclick="addToCart('Arhar Dal', 'arhar-dal', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 10 -->
+
+<div class="product-card">
+
+<div class="product-image">🫘</div>
+
+<div class="product-info">
+
+<h3>Kala Chana</h3>
+
+<p>
+    Wholesome and hearty for traditional Indian meals.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'kala-chana')">
+
+<option value="500" data-price="100">500 g</option>
+<option value="1000" data-price="190">1 kg</option>
+<option value="2000" data-price="365">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-kala-chana">£1.00</span>
+
+<button class="add-cart"
+onclick="addToCart('Kala Chana', 'kala-chana', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 11 -->
+
+<div class="product-card">
+
+<div class="product-image">🌾</div>
+
+<div class="product-info">
+
+<h3>Chana Dal</h3>
+
+<p>
+    A kitchen favourite for delicious traditional dishes.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'chana-dal')">
+
+<option value="500" data-price="105">500 g</option>
+<option value="1000" data-price="200">1 kg</option>
+<option value="2000" data-price="385">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-chana-dal">£1.05</span>
+
+<button class="add-cart"
+onclick="addToCart('Chana Dal', 'chana-dal', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 12 -->
+
+<div class="product-card">
+
+<div class="product-image">🫘</div>
+
+<div class="product-info">
+
+<h3>Kali Masoor</h3>
+
+<p>
+    Naturally wholesome for nutritious everyday meals.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'kali-masoor')">
+
+<option value="500" data-price="105">500 g</option>
+<option value="1000" data-price="200">1 kg</option>
+<option value="2000" data-price="385">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-kali-masoor">£1.05</span>
+
+<button class="add-cart"
+onclick="addToCart('Kali Masoor', 'kali-masoor', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 13 -->
+
+<div class="product-card">
+
+<div class="product-image">🫘</div>
+
+<div class="product-info">
+
+<h3>Masoor Dal (Two Split)</h3>
+
+<p>
+    Simple goodness for comforting everyday meals.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'masoor-dal')">
+
+<option value="500" data-price="100">500 g</option>
+<option value="1000" data-price="190">1 kg</option>
+<option value="2000" data-price="365">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-masoor-dal">£1.00</span>
+
+<button class="add-cart"
+onclick="addToCart('Masoor Dal (Two Split)', 'masoor-dal', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 14 -->
+
+<div class="product-card">
+
+<div class="product-image">🫘</div>
+
+<div class="product-info">
+
+<h3>Malka</h3>
+
+<p>
+    A versatile pulse for wholesome family cooking.
+</p>
+
+<label class="size-label">Choose Pack Size</label>
+
+<select class="size-select"
+onchange="updatePrice(this, 'malka')">
+
+<option value="500" data-price="100">500 g</option>
+<option value="1000" data-price="190">1 kg</option>
+<option value="2000" data-price="365">2 kg</option>
+
+</select>
+
+<div class="product-bottom">
+
+<span class="price" id="price-malka">£1.00</span>
+
+<button class="add-cart"
+onclick="addToCart('Malka', 'malka', this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     OUR STORY
+===================================================== -->
+
+<section class="section story" id="story">
+
+<div class="container story-grid">
+
+<div class="story-content">
+
+<h2>
+    A Tradition Built on Trust
+</h2>
+
+<p>
+    What began with a belief in honest business and quality
+    products continues today with a commitment to serving
+    families with pulses they can trust.
+</p>
+
+<p>
+    Rooted in tradition and guided by modern standards,
+    Aavrit brings together experience and a fresh approach
+    to quality and packaging.
+</p>
+
+<p>
+    We believe that a brand is not built overnight.
+    It is built one relationship, one family and one meal
+    at a time.
+</p>
+
+<a href="#contact" class="btn btn-primary">
+    Get In Touch →
+</a>
+
+</div>
+
+<div class="story-visual"></div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     QUALITY PROMISE
+===================================================== -->
+
+<section class="section quality" id="quality">
+
+<div class="container">
+
+<div class="quality-box">
+
+<h2>
+    Our Promise to You
+</h2>
+
+<p>
+    Quality you can see. Purity you can trust.
+    Taste you can enjoy.
+</p>
+
+<p>
+    We are committed to bringing you pulses that meet
+    our standards of quality and consistency. Every pack
+    carries our promise to deliver products that are
+    carefully sourced, thoughtfully handled and packed
+    with care.
+</p>
+
+<div class="quality-points">
+
+<span>🌾 Quality Sourcing</span>
+<span>🔍 Careful Selection</span>
+<span>📦 Thoughtful Packaging</span>
+<span>❤️ Family-First Promise</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+<h2>
+    Bring Home the Goodness
+</h2>
+
+<p>
+    Good food starts with ingredients you can trust.
+    Explore our range of quality pulses and discover
+    the goodness that belongs in every Indian kitchen.
+</p>
+
+<a href="#products" class="btn btn-primary">
+    Shop Our Products
+</a>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="section contact" id="contact">
+
+<div class="container contact-grid">
+
+<div class="contact-info">
+
+<h2>
+    We'd Love to Hear From You
+</h2>
+
+<p>
+    Whether you are a customer, retailer, distributor
+    or business partner, we'd be happy to connect with you.
+</p>
+
+<div class="contact-details">
+
+<div>📍 <strong>Address:</strong> Your Business Address</div>
+
+<div>📞 <strong>Phone:</strong> Your Phone Number</div>
+
+<div>📧 <strong>Email:</strong> your@email.com</div>
+
+<div>💬 <strong>WhatsApp:</strong> Your WhatsApp Number</div>
+
+</div>
+
+</div>
+
+
+<div class="contact-form">
+
+<form onsubmit="submitContact(event)">
+
+<div class="form-group">
+
+<label>Your Name</label>
+
+<input
+type="text"
+placeholder="Enter your name"
+required
+>
+
+</div>
+
+<div class="form-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+placeholder="Enter your email"
+required
+>
+
+</div>
+
+<div class="form-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+placeholder="Enter your phone number"
+>
+
+</div>
+
+<div class="form-group">
+
+<label>Your Message</label>
+
+<textarea
+placeholder="How can we help you?"
+></textarea>
+
+</div>
+
+<button class="btn btn-primary" type="submit">
+    Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-about">
+
+<div class="footer-logo">
+    AAVRIT
+</div>
+
+<p>
+    Pure. Wholesome. Carefully Selected.
+</p>
+
+<p>
+    Bringing quality pulses to your family's kitchen,
+    one meal at a time.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul class="footer-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#products">Our Products</a></li>
+
+<li><a href="#story">Our Story</a></li>
+
+<li><a href="#quality">Quality Promise</a></li>
+
+<li><a href="#contact">Contact Us</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>Customer Support</h3>
+
+<ul class="footer-links">
+
+<li><a href="#">FAQs</a></li>
+
+<li><a href="#">Shipping & Delivery</a></li>
+
+<li><a href="#">Privacy Policy</a></li>
+
+<li><a href="#">Terms & Conditions</a></li>
+
+<li><a href="#">Refund Policy</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 Aavrit. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     CART SIDEBAR
+===================================================== -->
+
+<div
+class="cart-overlay"
+id="cartOverlay"
+onclick="closeCart()">
+</div>
+
+
+<div class="cart-sidebar" id="cartSidebar">
+
+<div class="cart-header">
+
+<h2>Your Cart</h2>
+
+<button
+class="close-cart"
+onclick="closeCart()">
+×
+</button>
+
+</div>
+
+
+<div class="cart-items" id="cartItems">
+
+<p style="text-align:center;color:#777;">
+    Your cart is empty.
+</p>
+
+</div>
+
+
+<div class="cart-total">
+
+<div class="total-row">
+
+<span>Total</span>
+
+<span id="cartTotal">£0.00</span>
+
+</div>
+
+<button
+class="checkout-btn"
+onclick="checkout()">
+
+Proceed to Checkout
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div class="toast" id="toast">
+    Product added to your cart!
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* -------------------------
+   MOBILE MENU
+------------------------- */
+
+function toggleMenu() {
+
+    document
+        .getElementById("navLinks")
+        .classList.toggle("active");
+
+}
+
+
+/* -------------------------
+   CART
+------------------------- */
+
+let cart = [];
+
+
+/* -------------------------
+   UPDATE PRODUCT PRICE
+------------------------- */
+
+function updatePrice(select, productId) {
+
+    const selectedOption =
+        select.options[select.selectedIndex];
+
+    const price =
+        parseFloat(selectedOption.dataset.price);
+
+    document.getElementById(
+        "price-" + productId
+    ).textContent =
+        "£" + (price / 100).toFixed(2);
+
+}
+
+
+/* -------------------------
+   ADD TO CART
+------------------------- */
+
+function addToCart(productName, productId, button) {
+
+    const card =
+        button.closest(".product-card");
+
+    const select =
+        card.querySelector(".size-select");
+
+    const selectedOption =
+        select.options[select.selectedIndex];
+
+    const size =
+        selectedOption.value;
+
+    const price =
+        parseFloat(selectedOption.dataset.price);
+
+
+    const existingItem =
+        cart.find(item =>
+            item.id === productId &&
+            item.size === size
+        );
+
+
+    if (existingItem) {
+
+        existingItem.quantity++;
+
+    } else {
+
+        cart.push({
+
+            id: productId,
+
+            name: productName,
+
+            size: size,
+
+            price: price,
+
+            quantity: 1
+
+        });
+
+    }
+
+
+    updateCart();
+
+    showToast(
+        productName +
+        " added to your cart!"
+    );
+
+}
+
+
+/* -------------------------
+   UPDATE CART
+------------------------- */
+
+function updateCart() {
+
+    const cartItems =
+        document.getElementById("cartItems");
+
+    const cartCount =
+        document.getElementById("cartCount");
+
+    const cartTotal =
+        document.getElementById("cartTotal");
+
+
+    let totalItems = 0;
+
+    let totalPrice = 0;
+
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML =
+            '<p style="text-align:center;color:#777;">Your cart is empty.</p>';
+
+    } else {
+
+        cartItems.innerHTML = "";
+
+
+        cart.forEach((item, index) => {
+
+            totalItems += item.quantity;
+
+            totalPrice +=
+                (item.price / 100) *
+                item.quantity;
+
+
+            const itemHTML = document.createElement("div");
+
+            itemHTML.className = "cart-item";
+
+
+            itemHTML.innerHTML = `
+
+                <div class="cart-item-top">
+
+                    <div>
+
+                        <h4>
+                            ${item.name}
+                        </h4>
+
+                        <small>
+                            ${item.size} g
+                        </small>
+
+                    </div>
+
+                    <strong>
+                        £${((item.price / 100) *
+                        item.quantity).toFixed(2)}
+                    </strong>
+
+                </div>
+
+
+                <div class="cart-controls">
+
+                    <button
+                        onclick="changeQuantity(${index}, -1)">
+                        −
+                    </button>
+
+                    <span>
+                        ${item.quantity}
+                    </span>
+
+                    <button
+                        onclick="changeQuantity(${index}, 1)">
+                        +
+                    </button>
+
+                    <button
+                        class="remove-item"
+                        onclick="removeItem(${index})">
+                        Remove
+                    </button>
+
+                </div>
+
+            `;
+
+
+            cartItems.appendChild(itemHTML);
+
+        });
+
+    }
+
+
+    cartCount.textContent =
+        totalItems;
+
+    cartTotal.textContent =
+        "£" + totalPrice.toFixed(2);
+
+}
+
+
+/* -------------------------
+   CHANGE QUANTITY
+------------------------- */
+
+function changeQuantity(index, amount) {
+
+    cart[index].quantity += amount;
+
+
+    if (cart[index].quantity <= 0) {
+
+        cart.splice(index, 1);
+
+    }
+
+
+    updateCart();
+
+}
+
+
+/* -------------------------
+   REMOVE ITEM
+------------------------- */
+
+function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    updateCart();
+
+}
+
+
+/* -------------------------
+   OPEN CART
+------------------------- */
+
+function openCart() {
+
+    document
+        .getElementById("cartSidebar")
+        .classList.add("active");
+
+    document
+        .getElementById("cartOverlay")
+        .classList.add("active");
+
+}
+
+
+/* -------------------------
+   CLOSE CART
+------------------------- */
+
+function closeCart() {
+
+    document
+        .getElementById("cartSidebar")
+        .classList.remove("active");
+
+    document
+        .getElementById("cartOverlay")
+        .classList.remove("active");
+
+}
+
+
+/* -------------------------
+   CHECKOUT
+------------------------- */
+
+function checkout() {
+
+    if (cart.length === 0) {
+
+        alert(
+            "Your cart is empty. Please add a product first."
+        );
+
+        return;
+
+    }
+
+
+    alert(
+        "Checkout will be connected to your online payment gateway in the next stage."
+    );
+
+}
+
+
+/* -------------------------
+   CONTACT FORM
+------------------------- */
+
+function submitContact(event) {
+
+    event.preventDefault();
+
+
+    alert(
+        "Thank you! Your message has been received."
+    );
+
+
+    event.target.reset();
+
+}
+
+
+/* -------------------------
+   TOAST
+------------------------- */
+
+function showToast(message) {
+
+    const toast =
+        document.getElementById("toast");
+
+
+    toast.textContent =
+        message;
+
+
+    toast.classList.add("show");
+
+
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+    }, 2500);
+
+}
+
+
+/* -------------------------
+   INITIAL CART
+------------------------- */
+
+updateCart();
+
+</script>
+
+</body>
+</html>
